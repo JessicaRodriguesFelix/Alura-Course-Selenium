@@ -29,11 +29,11 @@ public class UsuariosSystemTest {
 
 		usuarios.visita();
 		Thread.sleep(3000);
-        usuarios.novo().cadastra("Jéssica Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com");
+        usuarios.novo().cadastra("Jessica Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com");
 
         Thread.sleep(3000);
         
-        assertTrue(usuarios.existeNaListagem("Jéssica Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com"));	
+        assertTrue(usuarios.existeNaListagem("Jessica Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com"));	
 		}
 	
 	@After 
