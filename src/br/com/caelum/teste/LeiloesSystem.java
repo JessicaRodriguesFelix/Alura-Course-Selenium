@@ -21,7 +21,7 @@ public class LeiloesSystem {
 		
 		UsuariosPage usuarios = new UsuariosPage(driver);
 		usuarios.visita();
-		usuarios.novo().cadastra("Jessica Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com");
+		usuarios.novo().cadastra("Fernanda Rodrigues de Souza", "jessicarodrigues_felix@hotmail.com");
 				
 	}
 	
@@ -30,11 +30,11 @@ public class LeiloesSystem {
 		
 		leiloes.visita();
 		NovoLeilaoPage novoLeilao = leiloes.novo();		
-		novoLeilao.preenche("Mesa", 123, "Jessica Rodrigues de Souza", true);
+		novoLeilao.preenche("Carro", 50000, "Fernanda Rodrigues de Souza", true);
 		
 		 Thread.sleep(3000);
 		
-		assertTrue(leiloes.existe("Mesa", 123, "Jessica Rodrigues de Souza", true));		
+		assertTrue(leiloes.existe("Carro", 50000, "Fernanda Rodrigues de Souza", true));		
 		
 	}
 
